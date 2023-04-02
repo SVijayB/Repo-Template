@@ -1,7 +1,7 @@
 # SVijayB-RepoTemplate
 
 <p align="center">
-    <img src="assets/Logo.png" alt="Logo" border="0" width="800">
+    <img src="assets/Logo.png" alt="Logo" border="0">
     <br>Short description of the project
 </p>
 
