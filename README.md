@@ -44,7 +44,7 @@
 
 <!--- Insert product screenshot below --->
 
-![Product Screenshot](https://i.ibb.co/y4Bv8WP/codecode.jpg)
+![Product Screenshot](https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif)
 
 <!--- replace with motivation for your project --->
 
