@@ -77,7 +77,7 @@ To launch the file, use the following command, `python3 app.py`.
 
 ### Project demo
 
-![Project demo](https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy.gif)
+![Project demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTJlODMxMDg0ZWJjOGFmNTdjYzczZTMwZTIyNzM3YTExZWMxMzM2OCZjdD1n/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif)
 
 ## Contributing
 
