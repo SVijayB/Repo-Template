@@ -60,7 +60,8 @@ This template currently contains the following features:
 
 Simply search and replace `Repo-Template` with the name of your project.
 
-I also plan to create a script to easily update the repository in later iterations of this template.
+Or, you can use the `assets\template-script.py` to automate the process.
+Run the file by using the following command, `py template-script.py`.
 
 ## Installation
 
@@ -93,11 +94,13 @@ To launch the file, use the following command, `python3 app.py`.
 
 ![Project demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTJlODMxMDg0ZWJjOGFmNTdjYzczZTMwZTIyNzM3YTExZWMxMzM2OCZjdD1n/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif)
 
+You can also find the demo video [here](https://www.youtube.com/watch?v=QH2-TGUlwu4).
+
 ## Contributing
 
 To contribute to Repo-Template, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests.
 
-Also, thanks for contributing to Open-source!
+Thanks for contributing to Open-source! ❤️
 
 ## License
 
