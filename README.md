@@ -48,7 +48,7 @@
 
 <!--- replace with motivation for your project --->
 
-In order to easily to create a new project, I have created a standard template for the all my projects.
+In order to easily create a new project, I have created a standard template for the all my projects.
 This template currently contains the following features:
 
 -   Issue templates.
