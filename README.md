@@ -109,7 +109,7 @@ uv run main.py
 
 $$\color{#90D5FF}Project \space \color{#56565E}Demo$$
 
-![Project demo](https://miro.medium.com/v2/resize:fit:1000/0*l96PanlS5urYK4t4)
+![Project demo](https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUycDUybHhzNHYxbW1hYTQ5bnd5MHRyMjQzbHU5MnNobDZ3NDc3M3dzYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/11sBLVxNs7v6WA/giphy.gif)
 
 You can also find the demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
