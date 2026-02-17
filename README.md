@@ -45,7 +45,9 @@
 
 ## 📖 Motivation
 
-![Product Screenshot](https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif)
+<p align="center">
+    <img src="https://i.pinimg.com/originals/4a/65/ab/4a65abeead3a8d113bccfee5d5d239f4.gif">
+</p>
 
 $$\color{#90D5FF}Purpose$$
 
@@ -53,18 +55,18 @@ $$\color{#90D5FF}Purpose$$
 
 $$\color{#90D5FF}Features \space \color{#56565E}Included$$
 
-- ✅ Issue templates
-- ✅ Pull request templates
-- ✅ Contributing guidelines
-- ✅ Code of conduct
-- ✅ Required resources to help people start contributing
-- ✅ README.md file with a basic setup
+- Issue templates
+- Pull request templates
+- Contributing guidelines
+- Code of conduct
+- Required resources to help people start contributing
+- README.md file with a basic setup
 
 $$\color{#90D5FF}Quick \space \color{#56565E}Start$$
 
 Simply search and replace `Repo-Template` with the name of your project.
 
-*Or, use the automation script:*
+Or, use the automation script:
 
 ```bash
 python assets/template-script.py
@@ -72,30 +74,27 @@ python assets/template-script.py
 
 ## 📦 Installation
 
-$$\color{#90D5FF}Stable \space \color{#56565E}Release$$
-
-For the latest stable version, head to [Releases](https://github.com/SVijayB/Repo-Template/releases).
-
-*Download and extract the source code.*
-
 $$\color{#90D5FF}Clone \space \color{#56565E}Repository$$
 
 ```bash
 git clone https://github.com/SVijayB/Repo-Template
+cd Repo-Template
+```
+
+$$\color{#90D5FF}Install \space \color{#56565E}Prerequisites$$
+
+*This project uses [uv](https://github.com/astral-sh/uv) for fast, reliable Python package management. Install it with:*
+
+```bash
+pip install uv
 ```
 
 $$\color{#90D5FF}Setup \space \color{#56565E}Environment$$
 
-*Create a virtual environment:*
+*Create a virtual environment and install all requirements*
 
 ```bash
-python3 -m venv venv
-```
-
-*Enter the virtual environment and install dependencies:*
-
-```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 ## 🚀 Usage
@@ -105,39 +104,27 @@ $$\color{#90D5FF}Launch \space \color{#56565E}Application$$
 *To launch the application, use:*
 
 ```bash
-python3 app.py
+uv run main.py
 ```
 
 $$\color{#90D5FF}Project \space \color{#56565E}Demo$$
 
-![Project demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTJlODMxMDg0ZWJjOGFmNTdjYzczZTMwZTIyNzM3YTExZWMxMzM2OCZjdD1n/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif)
+![Project demo](https://miro.medium.com/v2/resize:fit:1000/0*l96PanlS5urYK4t4)
 
 You can also find the demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
-
-## 🎯 Features
-
-$$\color{#90D5FF}Template \space \color{#56565E}Components$$
-
-- 📋 **Issue Templates** - Pre-configured templates for bug reports and feature requests
-- 🔀 **Pull Request Templates** - Standardized PR format for consistency
-- 📖 **Contributing Guidelines** - Clear instructions for contributors
-- 🤝 **Code of Conduct** - Community standards and expectations
-- 📚 **Documentation** - Comprehensive README and supporting docs
-- 🔧 **Automation Script** - Quick setup for new projects
 
 ## 🤝 Contributing
 
 $$\color{#90D5FF}How \space \color{#56565E}to \space Contribute$$
 
-*To contribute to Repo-Template, fork the repository, create a new branch and send us a pull request.*
-
+To contribute to Repo-Template, fork the repository, create a new branch and send us a pull request.
 Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests.
 
 Thanks for contributing to Open-source! ❤️
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/SVijayB/Repo-Template/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License. Read the [LICENSE](https://github.com/SVijayB/Repo-Template/blob/master/LICENSE) file for details.
 
 ---
 
