@@ -1,111 +1,154 @@
-# Repo-Template
+# repo-template
 
 <p align="center">
-    <img src="assets/Logo.png" alt="Logo" border="0">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+        <img alt="Switcher for light and dark mode" src="assets/logo.png">
+    </picture>
     <br>Short description of the project
 </p>
 
 ---
 
 <p align="center">
-    <a href="https://github.com/SVijayB/Repo-Template/pulls">
-        <img src="https://img.shields.io/github/issues-pr/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=opencollective" alt="GitHub pull-requests">
+    <a href="https://github.com/svijayb/repo-template/pulls">
+        <img src="https://img.shields.io/github/issues-pr/svijayb/repo-template.svg?style=for-the-badge&amp;logo=opencollective" alt="GitHub pull-requests">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/issues">
-    <img src="https://img.shields.io/github/issues/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=testcafe" alt="GitHub issues">
+<a href="https://github.com/svijayb/repo-template/issues">
+    <img src="https://img.shields.io/github/issues/svijayb/repo-template.svg?style=for-the-badge&amp;logo=testcafe" alt="GitHub issues">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=bandsintown" alt="GitHub contributors">
+<a href="https://github.com/svijayb/repo-template/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/svijayb/repo-template.svg?style=for-the-badge&amp;logo=bandsintown" alt="GitHub contributors">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/SVijayB/Repo-Template?style=for-the-badge&amp;logo=appveyor" alt="GitHub license">
+<a href="https://github.com/svijayb/repo-template/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/svijayb/repo-template?style=for-the-badge&amp;logo=appveyor" alt="GitHub license">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template">
-    <img src="https://img.shields.io/github/repo-size/SVijayB/Repo-Template?style=for-the-badge&amp;logo=git" alt="GitHub repo size">
+<a href="https://github.com/svijayb/repo-template">
+    <img src="https://img.shields.io/github/repo-size/svijayb/repo-template?style=for-the-badge&amp;logo=git" alt="GitHub repo size">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/master/.github/CODE_OF_CONDUCT.md">
+<a href="https://github.com/svijayb/repo-template/blob/main/.github/CODE_OF_CONDUCT.md">
     <img src="https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge&amp;logo=crowdsource" alt="Code of Conduct">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md">
+<a href="https://github.com/svijayb/repo-template/blob/main/.github/CONTRIBUTING.md">
     <img src="https://img.shields.io/static/v1?style=for-the-badge&amp;logo=opensourceinitiative&amp;label=Open&amp;message=Source%20%E2%9D%A4%EF%B8%8F&amp;color=blueviolet" alt="Open Source Love svg1">
     </a>
+</p
+
+## 🗺️ Map
+
+- [<code>📖 Motivation</code>](#-motivation)
+- [<code>📦 Installation</code>](#-installation)
+- [<code>🚀 Usage</code>](#-usage)
+- [<code>🤝 Contributing</code>](#-contributing)
+- [<code>📝 License</code>](#-license)
+
+## 📖 Motivation
+
+<p align="center">
+    <img src="https://i.pinimg.com/originals/4a/65/ab/4a65abeead3a8d113bccfee5d5d239f4.gif">
 </p>
 
-## Table of Contents
+$$\color{#00BFFF}Purpose$$
 
--   [Motivation](#Motivation)
--   [Installation](#Installation)
--   [Usage](#Usage)
-    -   [Project Demo](#Demo)
--   [Contributing](#Contributing)
--   [License](#License)
+In order to easily create a new project, I have created a standard template for all my projects.
 
-## Motivation
+$$\color{#00BFFF}Features \space \color{#56565E}Included$$
 
-<!--- Insert product screenshot below --->
+- Issue templates
+- Pull request templates
+- Contributing guidelines
+- Code of conduct
+- Required resources to help people start contributing
+- README.md file with a basic setup
 
-![Product Screenshot](https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif)
+$$\color{#00BFFF}Quick \space \color{#56565E}Start$$
 
-<!--- replace with motivation for your project --->
+Simply search and replace `repo-template` with the name of your project.
 
-In order to easily create a new project, I have created a standard template for the all my projects.
-This template currently contains the following features:
+Or, use the automation script:
 
--   Issue templates.
--   Pull request templates.
--   Contributing guidelines.
--   Code of conduct.
--   Required resources to help people start contributing.
--   README.md file with a basic setup.
+```bash
+python assets/replace-name.py
+```
 
-Simply search and replace `Repo-Template` with the name of your project.
+Don't forget to change the logo and the demo video in the README.md file!
 
-Or, you can use the `assets\template-script.py` to automate the process.
-Run the file by using the following command, `py template-script.py`.
+## 📦 Installation
 
-## Installation
+$$\color{#00BFFF}Clone \space \color{#56565E}Repository$$
 
-<!--- Provide instructions on installing the application --->
+```bash
+git clone https://github.com/svijayb/repo-template
+cd repo-template
+```
 
-For the latest stable version, head to [Releases](https://github.com/SVijayB/Repo-Template/releases).
+$$\color{#00BFFF}Install \space \color{#56565E}Prerequisites$$
 
-Download and extract the source code.
+This project uses [uv](https://github.com/astral-sh/uv) for fast, reliable Python package management. Install it with:
 
-As an alternative, you could also clone the repository using,
+```bash
+pip install uv
+```
 
-<pre>
-git clone https://github.com/SVijayB/Repo-Template
-</pre>
+$$\color{#00BFFF}Setup \space \color{#56565E}Environment$$
 
-Once you have the source code, create a virtual environment using the following command,
-`python3 -m venv venv`
+Create a virtual environment and install all requirements.
+Make sure to update the `pyproject.toml` file with your project name and description!
 
-Enter the virtual environment and install dependancies using `pip install -r requirements.txt`.
+```bash
+uv sync
+```
 
-## Usage
+Before we can run the script, let's make sure to setup environment variables.
 
-<!--- Provide instructions on how to use the application after installing it --->
+```bash
+cp .env.example .env
+```
 
-To launch the file, use the following command, `python3 app.py`.
+Then, update the `.env` file with the relevant values.
 
-<!--- You can also add in screenshots, app demo (Gif format) or even provide link to other resources --->
+## 🚀 Usage
 
-### Project demo
+$$\color{#00BFFF}Launch \space \color{#56565E}Application$$
 
-![Project demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTJlODMxMDg0ZWJjOGFmNTdjYzczZTMwZTIyNzM3YTExZWMxMzM2OCZjdD1n/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif)
+To launch the application, use:
+
+```bash
+uv run main.py
+```
+
+$$\color{#00BFFF}Project \space \color{#56565E}Demo$$
+
+![Project demo](https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUycDUybHhzNHYxbW1hYTQ5bnd5MHRyMjQzbHU5MnNobDZ3NDc3M3dzYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/11sBLVxNs7v6WA/giphy.gif)
 
 You can also find the demo video [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
-## Contributing
+## 🤝 Contributing
 
-To contribute to Repo-Template, fork the repository, create a new branch and send us a pull request. Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests.
+$$\color{#00BFFF}How \space \color{#56565E}to \space Contribute$$
+
+To contribute to repo-template, fork the repository, create a new branch and send us a pull request.
+Make sure you read [CONTRIBUTING.md](.github/CONTRIBUTING.md) before sending us Pull requests.
 
 Thanks for contributing to Open-source! ❤️
 
-## License
+## 📝 License
 
-Repo-Template is under The MIT License. Read the [LICENSE](https://github.com/SVijayB/Repo-Template/blob/master/LICENSE) file for more information.
+This project is licensed under the MIT License. Read the [LICENSE](LICENSE) file for details.
 
----
 
-<img src="assets/footercredits.png" width = "600px">
+```
+██╗    ██╗███████╗    ██╗      ██████╗ ██╗   ██╗███████╗      ██╗██████╗                 
+██║    ██║██╔════╝    ██║     ██╔═══██╗██║   ██║██╔════╝     ██╔╝╚════██╗                
+██║ █╗ ██║█████╗      ██║     ██║   ██║██║   ██║█████╗      ██╔╝  █████╔╝                
+██║███╗██║██╔══╝      ██║     ██║   ██║╚██╗ ██╔╝██╔══╝      ╚██╗  ╚═══██╗                
+╚███╔███╔╝███████╗    ███████╗╚██████╔╝ ╚████╔╝ ███████╗     ╚██╗██████╔╝                
+ ╚══╝╚══╝ ╚══════╝    ╚══════╝ ╚═════╝   ╚═══╝  ╚══════╝      ╚═╝╚═════╝                 
+                                                                                         
+ ██████╗ ██████╗ ███████╗███╗   ██╗    ███████╗ ██████╗ ██╗   ██╗██████╗  ██████╗███████╗
+██╔═══██╗██╔══██╗██╔════╝████╗  ██║    ██╔════╝██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝
+██║   ██║██████╔╝█████╗  ██╔██╗ ██║    ███████╗██║   ██║██║   ██║██████╔╝██║     █████╗  
+██║   ██║██╔═══╝ ██╔══╝  ██║╚██╗██║    ╚════██║██║   ██║██║   ██║██╔══██╗██║     ██╔══╝  
+╚██████╔╝██║     ███████╗██║ ╚████║    ███████║╚██████╔╝╚██████╔╝██║  ██║╚██████╗███████╗
+ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═══╝    ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝
+```
