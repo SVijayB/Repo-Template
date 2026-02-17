@@ -51,7 +51,7 @@
 
 $$\color{#00BFFF}Purpose$$
 
-*In order to easily create a new project, I have created a standard template for all my projects.*
+In order to easily create a new project, I have created a standard template for all my projects.
 
 $$\color{#00BFFF}Features \space \color{#56565E}Included$$
 
@@ -72,6 +72,8 @@ Or, use the automation script:
 python assets/template-script.py
 ```
 
+Don't forget to change the logo and the demo video in the README.md file!
+
 ## 📦 Installation
 
 $$\color{#00BFFF}Clone \space \color{#56565E}Repository$$
@@ -83,7 +85,7 @@ cd Repo-Template
 
 $$\color{#00BFFF}Install \space \color{#56565E}Prerequisites$$
 
-*This project uses [uv](https://github.com/astral-sh/uv) for fast, reliable Python package management. Install it with:*
+This project uses [uv](https://github.com/astral-sh/uv) for fast, reliable Python package management. Install it with:
 
 ```bash
 pip install uv
@@ -91,7 +93,7 @@ pip install uv
 
 $$\color{#00BFFF}Setup \space \color{#56565E}Environment$$
 
-*Create a virtual environment and install all requirements*
+Create a virtual environment and install all requirements
 
 ```bash
 uv sync
@@ -101,7 +103,7 @@ uv sync
 
 $$\color{#00BFFF}Launch \space \color{#56565E}Application$$
 
-*To launch the application, use:*
+To launch the application, use:
 
 ```bash
 uv run main.py
@@ -118,13 +120,13 @@ You can also find the demo video [here](https://www.youtube.com/watch?v=dQw4w9Wg
 $$\color{#00BFFF}How \space \color{#56565E}to \space Contribute$$
 
 To contribute to Repo-Template, fork the repository, create a new branch and send us a pull request.
-Make sure you read [CONTRIBUTING.md](https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md) before sending us Pull requests.
+Make sure you read [CONTRIBUTING.md](.github/CONTRIBUTING.md) before sending us Pull requests.
 
 Thanks for contributing to Open-source! ❤️
 
 ## 📝 License
 
-This project is licensed under the MIT License. Read the [LICENSE](https://github.com/SVijayB/Repo-Template/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License. Read the [LICENSE](LICENSE) file for details.
 
 
 ```
