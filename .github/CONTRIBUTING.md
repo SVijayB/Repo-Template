@@ -11,7 +11,7 @@ We love your input! We want to make contributing to this project as easy and tra
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change.
 
-Please note we have a [Code Of Conduct](https://github.com/SVijayB/Repo-Template/blob/master/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+Please note we have a [Code Of Conduct](https://github.com/SVijayB/Repo-Template/blob/main/.github/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ### General rules
 
@@ -37,17 +37,17 @@ Please note we have a [Code Of Conduct](https://github.com/SVijayB/Repo-Template
 
 -   For Class, method declarations and anything else, have braces starting in the next line.
 -   One space between operators and operands is a must.
--   Use tabs for intendation.
--   Make sure a line doesn't exceed 80 characters.
+-   Use tabs for indentation.
+-   Make sure a line doesn't exceed 100 characters.
 
 ### Pull Request Process
 
 -   Check if there's already a pull request assigned to someone that solves a similar problem to yours.
--   Ensure that the pull request is being sent from a hotfix/feature branch and not from `master`.
+-   Ensure that the pull request is being sent from a hotfix/feature branch and not from `main`.
 -   Check the issue page if the feature you are trying to add/bug you are trying to fix is already in the list. If it does, mention the issue number in parentheses with the pull request.
 -   Provide a clear, concise description of why this pull request is necessary and what value it adds. Make sure that your pull request doesn't contain any more or less than what the pull request description says.
 -   One pull request should do only one thing. No more, no less. If you want to implement two new features, open two pull requests.
 
 ### Any contributions you make will be under the MIT Software License
 
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](https://github.com/SVijayB/Repo-Template/blob/master/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
+In short, when you submit code changes, your submissions are understood to be under the same [MIT License](https://github.com/SVijayB/Repo-Template/blob/main/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.

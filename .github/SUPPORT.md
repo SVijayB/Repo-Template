@@ -1,15 +1,17 @@
 # Getting Support
 
-Hey,
+Hey! 👋
 
-If you have any question regarding anything related to this project, feel free to create an issue.
+If you have any questions about this project, feel free to create an issue.
 
-If this is your first time contributing to open source or your first time on GitHub, go through these documentations :
+## First Time Contributing?
 
--   [Creating an Issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)
--   [Creating a Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
--   [Git And GitHub Resources](https://github.com/Open-Source-Community-VIT-AP/OpenSource101)
+If this is your first time contributing to open source or your first time on GitHub, check out these resources:
 
-For more help related to GitHub, check out [GitHub Help](https://help.github.com/en)
+-   [Creating an Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
+-   [Creating a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+-   [Git and GitHub Resources](https://github.com/Open-Source-Community-VIT-AP/OpenSource101)
 
-Please Read our [Code Of Conduct](https://github.com/SVijayB/Repo-Template/blob/master/.github/CODE_OF_CONDUCT.md) and our [Contributing](https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md) documents for more details.
+For more GitHub help, check out [GitHub Docs](https://docs.github.com)
+
+Please read our [Code Of Conduct](https://github.com/SVijayB/Repo-Template/blob/main/.github/CODE_OF_CONDUCT.md) and [Contributing](https://github.com/SVijayB/Repo-Template/blob/main/.github/CONTRIBUTING.md) guidelines.

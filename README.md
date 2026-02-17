@@ -20,16 +20,16 @@
 <a href="https://github.com/SVijayB/Repo-Template/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=bandsintown" alt="GitHub contributors">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/master/LICENSE">
+<a href="https://github.com/SVijayB/Repo-Template/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/SVijayB/Repo-Template?style=for-the-badge&amp;logo=appveyor" alt="GitHub license">
     </a>
 <a href="https://github.com/SVijayB/Repo-Template">
     <img src="https://img.shields.io/github/repo-size/SVijayB/Repo-Template?style=for-the-badge&amp;logo=git" alt="GitHub repo size">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/master/.github/CODE_OF_CONDUCT.md">
+<a href="https://github.com/SVijayB/Repo-Template/blob/main/.github/CODE_OF_CONDUCT.md">
     <img src="https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge&amp;logo=crowdsource" alt="Code of Conduct">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/master/.github/CONTRIBUTING.md">
+<a href="https://github.com/SVijayB/Repo-Template/blob/main/.github/CONTRIBUTING.md">
     <img src="https://img.shields.io/static/v1?style=for-the-badge&amp;logo=opensourceinitiative&amp;label=Open&amp;message=Source%20%E2%9D%A4%EF%B8%8F&amp;color=blueviolet" alt="Open Source Love svg1">
     </a>
 </p
