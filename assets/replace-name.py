@@ -5,9 +5,9 @@ This script automates the process of replacing repository-specific information
 throughout the template files to set up a new project.
 
 Usage:
-    python template-script.py                    # Interactive mode
-    python template-script.py --url <repo-url>   # With arguments
-    python template-script.py --dry-run          # Preview changes only
+    python replace-name.py                    # Interactive mode
+    python replace-name.py --url <repo-url>   # With arguments
+    python replace-name.py --dry-run          # Preview changes only
 """
 
 import argparse
@@ -29,9 +29,9 @@ def parse_arguments():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python template-script.py
-  python template-script.py --url https://github.com/username/my-repo
-  python template-script.py --url https://github.com/user/repo --dry-run
+  python replace-name.py
+  python replace-name.py --url https://github.com/username/my-repo
+  python replace-name.py --url https://github.com/user/repo --dry-run
         """,
     )
 

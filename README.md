@@ -39,7 +39,6 @@
 - [<code>📖 Motivation</code>](#-motivation)
 - [<code>📦 Installation</code>](#-installation)
 - [<code>🚀 Usage</code>](#-usage)
-- [<code>🎯 Features</code>](#-features)
 - [<code>🤝 Contributing</code>](#-contributing)
 - [<code>📝 License</code>](#-license)
 
@@ -99,6 +98,14 @@ Make sure to update the `pyproject.toml` file with your project name and descrip
 ```bash
 uv sync
 ```
+
+Before we can run the script, let's make sure to setup environment variables.
+
+```bash
+cp .env.example .env
+```
+
+Then, update the `.env` file with the relevant values.
 
 ## 🚀 Usage
 
