@@ -69,7 +69,7 @@ Simply search and replace `repo-template` with the name of your project.
 Or, use the automation script:
 
 ```bash
-python assets/template-script.py
+python assets/replace-name.py
 ```
 
 Don't forget to change the logo and the demo video in the README.md file!
@@ -93,7 +93,8 @@ pip install uv
 
 $$\color{#00BFFF}Setup \space \color{#56565E}Environment$$
 
-Create a virtual environment and install all requirements
+Create a virtual environment and install all requirements.
+Make sure to update the `pyproject.toml` file with your project name and description!
 
 ```bash
 uv sync

@@ -11,12 +11,12 @@ Usage:
 """
 
 import argparse
-import os
+import re
 import sys
 from pathlib import Path
 
 # Files to process (markdown and common config files)
-SUPPORTED_EXTENSIONS = {".md", ".txt", ".py"}
+SUPPORTED_EXTENSIONS = {".md", ".txt", ".py", ".toml"}
 
 # Directories to skip
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".venv", "venv", "dist", "build"}
@@ -43,9 +43,9 @@ Examples:
 
     parser.add_argument(
         "--dir",
-        help="Directory path to process (default: current directory)",
+        help="Directory path to process (default: repository root)",
         type=str,
-        default=".",
+        default=None,
     )
 
     parser.add_argument(
@@ -66,7 +66,8 @@ def extract_repo_name(repo_url):
         repo_name = repo_url.split("https://github.com/")[1]
         if not repo_name or "/" not in repo_name:
             raise ValueError("Invalid repository format")
-        return repo_name
+        # Normalize to lowercase for consistency (GitHub URLs are case-insensitive)
+        return repo_name.lower()
     except (IndexError, ValueError):
         raise ValueError("Could not extract repository name from URL")
 
@@ -81,8 +82,41 @@ def should_process_file(file_path, skip_dirs):
     return file_path.suffix in SUPPORTED_EXTENSIONS
 
 
+def preview_changes(dir_path, old_repo, new_repo):
+    """Preview all changes that will be made."""
+    dir_path = Path(dir_path).resolve()
+    old_name = old_repo.split("/")[1]
+
+    changes = []
+
+    for file_path in dir_path.rglob("*"):
+        if not file_path.is_file() or not should_process_file(file_path, SKIP_DIRS):
+            continue
+
+        try:
+            content = file_path.read_text(encoding="utf-8")
+
+            if re.search(re.escape(old_repo), content, re.IGNORECASE) or re.search(
+                re.escape(old_name), content, re.IGNORECASE
+            ):
+                # Count replacements
+                repo_count = len(
+                    re.findall(re.escape(old_repo), content, re.IGNORECASE)
+                )
+                name_count = len(
+                    re.findall(re.escape(old_name), content, re.IGNORECASE)
+                )
+
+                relative_path = file_path.relative_to(dir_path)
+                changes.append((relative_path, repo_count, name_count))
+        except Exception:
+            pass
+
+    return changes
+
+
 def process_files(dir_path, old_repo, new_repo, dry_run=False):
-    """Process files in directory and replace repository references."""
+    """Process files in directory and replace repository references (case-insensitive)."""
     dir_path = Path(dir_path).resolve()
 
     if not dir_path.exists():
@@ -94,7 +128,7 @@ def process_files(dir_path, old_repo, new_repo, dry_run=False):
     new_name = new_repo.split("/")[1]  # Extract new repo name
 
     print(f"\n🔍 Scanning directory: {dir_path}")
-    print(f"🔄 Will replace:")
+    print("🔄 Will replace (case-insensitive):")
     print(f"   • '{old_repo}' → '{new_repo}'")
     print(f"   • '{old_name}' → '{new_name}'\n")
 
@@ -106,10 +140,17 @@ def process_files(dir_path, old_repo, new_repo, dry_run=False):
         try:
             content = file_path.read_text(encoding="utf-8")
 
-            # Check if replacement is needed
-            if old_repo in content or old_name in content:
-                new_content = content.replace(old_repo, new_repo)
-                new_content = new_content.replace(old_name, new_name)
+            # Check if replacement is needed (case-insensitive)
+            if re.search(re.escape(old_repo), content, re.IGNORECASE) or re.search(
+                re.escape(old_name), content, re.IGNORECASE
+            ):
+                # Replace using regex for case-insensitive matching
+                new_content = re.sub(
+                    re.escape(old_repo), new_repo, content, flags=re.IGNORECASE
+                )
+                new_content = re.sub(
+                    re.escape(old_name), new_name, new_content, flags=re.IGNORECASE
+                )
 
                 relative_path = file_path.relative_to(dir_path)
 
@@ -125,6 +166,22 @@ def process_files(dir_path, old_repo, new_repo, dry_run=False):
             print(f"   ⚠️  Warning: Could not process {file_path.name}: {str(e)}")
 
     return files_updated if not dry_run else len(files_to_update)
+
+
+def find_repo_root():
+    """Find the repository root by looking for .git directory."""
+    current = Path.cwd()
+
+    # Check current directory and parents
+    for path in [current] + list(current.parents):
+        if (path / ".git").exists():
+            return path
+
+    # If no .git found, return parent of current directory if we're in 'assets'
+    if current.name == "assets":
+        return current.parent
+
+    return current
 
 
 def main():
@@ -148,14 +205,34 @@ def main():
         print("   Expected format: https://github.com/username/repo-name")
         sys.exit(1)
 
-    # Get directory path
-    dir_path = args.dir
+    # Get directory path - default to repo root
+    if args.dir:
+        dir_path = args.dir
+    else:
+        dir_path = find_repo_root()
+        print(f"\n📁 Using repository root: {dir_path}")
+
+    # Preview changes first
+    print("\n🔎 Scanning for files to update...")
+    changes = preview_changes(dir_path, "svijayb/repo-template", repo_name)
+
+    if not changes:
+        print("\n⚠️  No files found to update. Template may already be configured.")
+        sys.exit(0)
+
+    print(f"\n📋 Found {len(changes)} file(s) with content to replace:")
+    print("\nReplacement plan:")
+    print(f"  'svijayb/repo-template' → '{repo_name}'")
+    print(f"  'repo-template' → '{repo_name.split('/')[1]}'")
+    print("\nFiles to be modified:")
+
+    for file_path, repo_count, name_count in changes:
+        total = repo_count + name_count
+        print(f"  • {file_path} ({total} replacement{'s' if total != 1 else ''})")
 
     # Confirm action if not in dry-run mode
     if not args.dry_run:
-        confirm = input(
-            f"\n⚠️  This will modify files in '{dir_path}'. Continue? [y/N]: "
-        ).lower()
+        confirm = input("\n⚠️  Proceed with modifications? [y/N]: ").lower()
         if confirm != "y":
             print("❌ Operation cancelled")
             sys.exit(0)
