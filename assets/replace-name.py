@@ -19,7 +19,7 @@ from pathlib import Path
 SUPPORTED_EXTENSIONS = {".md", ".txt", ".py", ".toml"}
 
 # Directories to skip
-SKIP_DIRS = {".git", "__pycache__", "node_modules", ".venv", "venv", "dist", "build"}
+SKIP_DIRS = {".git", ".venv", "venv", "dist", "build", "assets"}
 
 
 def parse_arguments():
@@ -126,11 +126,6 @@ def process_files(dir_path, old_repo, new_repo, dry_run=False):
     files_to_update = []
     old_name = old_repo.split("/")[1]  # Extract just "repo-template"
     new_name = new_repo.split("/")[1]  # Extract new repo name
-
-    print(f"\n🔍 Scanning directory: {dir_path}")
-    print("🔄 Will replace (case-insensitive):")
-    print(f"   • '{old_repo}' → '{new_repo}'")
-    print(f"   • '{old_name}' → '{new_name}'\n")
 
     # Walk through directory
     for file_path in dir_path.rglob("*"):
