@@ -1,4 +1,4 @@
-# Repo-Template
+# repo-template
 
 <p align="center">
     <picture>
@@ -11,25 +11,25 @@
 ---
 
 <p align="center">
-    <a href="https://github.com/SVijayB/Repo-Template/pulls">
-        <img src="https://img.shields.io/github/issues-pr/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=opencollective" alt="GitHub pull-requests">
+    <a href="https://github.com/svijayb/repo-template/pulls">
+        <img src="https://img.shields.io/github/issues-pr/svijayb/repo-template.svg?style=for-the-badge&amp;logo=opencollective" alt="GitHub pull-requests">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/issues">
-    <img src="https://img.shields.io/github/issues/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=testcafe" alt="GitHub issues">
+<a href="https://github.com/svijayb/repo-template/issues">
+    <img src="https://img.shields.io/github/issues/svijayb/repo-template.svg?style=for-the-badge&amp;logo=testcafe" alt="GitHub issues">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/SVijayB/Repo-Template.svg?style=for-the-badge&amp;logo=bandsintown" alt="GitHub contributors">
+<a href="https://github.com/svijayb/repo-template/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/svijayb/repo-template.svg?style=for-the-badge&amp;logo=bandsintown" alt="GitHub contributors">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/SVijayB/Repo-Template?style=for-the-badge&amp;logo=appveyor" alt="GitHub license">
+<a href="https://github.com/svijayb/repo-template/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/svijayb/repo-template?style=for-the-badge&amp;logo=appveyor" alt="GitHub license">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template">
-    <img src="https://img.shields.io/github/repo-size/SVijayB/Repo-Template?style=for-the-badge&amp;logo=git" alt="GitHub repo size">
+<a href="https://github.com/svijayb/repo-template">
+    <img src="https://img.shields.io/github/repo-size/svijayb/repo-template?style=for-the-badge&amp;logo=git" alt="GitHub repo size">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/main/.github/CODE_OF_CONDUCT.md">
+<a href="https://github.com/svijayb/repo-template/blob/main/.github/CODE_OF_CONDUCT.md">
     <img src="https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=for-the-badge&amp;logo=crowdsource" alt="Code of Conduct">
     </a>
-<a href="https://github.com/SVijayB/Repo-Template/blob/main/.github/CONTRIBUTING.md">
+<a href="https://github.com/svijayb/repo-template/blob/main/.github/CONTRIBUTING.md">
     <img src="https://img.shields.io/static/v1?style=for-the-badge&amp;logo=opensourceinitiative&amp;label=Open&amp;message=Source%20%E2%9D%A4%EF%B8%8F&amp;color=blueviolet" alt="Open Source Love svg1">
     </a>
 </p
@@ -64,7 +64,7 @@ $$\color{#00BFFF}Features \space \color{#56565E}Included$$
 
 $$\color{#00BFFF}Quick \space \color{#56565E}Start$$
 
-Simply search and replace `Repo-Template` with the name of your project.
+Simply search and replace `repo-template` with the name of your project.
 
 Or, use the automation script:
 
@@ -79,8 +79,8 @@ Don't forget to change the logo and the demo video in the README.md file!
 $$\color{#00BFFF}Clone \space \color{#56565E}Repository$$
 
 ```bash
-git clone https://github.com/SVijayB/Repo-Template
-cd Repo-Template
+git clone https://github.com/svijayb/repo-template
+cd repo-template
 ```
 
 $$\color{#00BFFF}Install \space \color{#56565E}Prerequisites$$
@@ -119,7 +119,7 @@ You can also find the demo video [here](https://www.youtube.com/watch?v=dQw4w9Wg
 
 $$\color{#00BFFF}How \space \color{#56565E}to \space Contribute$$
 
-To contribute to Repo-Template, fork the repository, create a new branch and send us a pull request.
+To contribute to repo-template, fork the repository, create a new branch and send us a pull request.
 Make sure you read [CONTRIBUTING.md](.github/CONTRIBUTING.md) before sending us Pull requests.
 
 Thanks for contributing to Open-source! ❤️

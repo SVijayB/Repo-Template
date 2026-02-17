@@ -14,4 +14,4 @@ If this is your first time contributing to open source or your first time on Git
 
 For more GitHub help, check out [GitHub Docs](https://docs.github.com)
 
-Please read our [Code Of Conduct](https://github.com/SVijayB/Repo-Template/blob/main/.github/CODE_OF_CONDUCT.md) and [Contributing](https://github.com/SVijayB/Repo-Template/blob/main/.github/CONTRIBUTING.md) guidelines.
+Please read our [Code Of Conduct](https://github.com/svijayb/repo-template/blob/main/.github/CODE_OF_CONDUCT.md) and [Contributing](https://github.com/svijayb/repo-template/blob/main/.github/CONTRIBUTING.md) guidelines.

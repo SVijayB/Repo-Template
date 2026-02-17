@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 # Files to process (markdown and common config files)
-SUPPORTED_EXTENSIONS = {".md", ".txt", ".yml", ".yaml", ".json", ".toml"}
+SUPPORTED_EXTENSIONS = {".md", ".txt", ".py"}
 
 # Directories to skip
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".venv", "venv", "dist", "build"}
@@ -90,7 +90,7 @@ def process_files(dir_path, old_repo, new_repo, dry_run=False):
 
     files_updated = 0
     files_to_update = []
-    old_name = old_repo.split("/")[1]  # Extract just "Repo-Template"
+    old_name = old_repo.split("/")[1]  # Extract just "repo-template"
     new_name = new_repo.split("/")[1]  # Extract new repo name
 
     print(f"\n🔍 Scanning directory: {dir_path}")
@@ -163,7 +163,7 @@ def main():
     try:
         count = process_files(
             dir_path,
-            old_repo="SVijayB/Repo-Template",
+            old_repo="svijayb/repo-template",
             new_repo=repo_name,
             dry_run=args.dry_run,
         )
